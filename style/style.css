@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+body > header, section, footer {
+    width: 100%;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.clearfix::before, .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.txtToUppercase {
+    text-transform: uppercase;
+}
+.highlighted {
+    color: #24ba9f;
+}
+a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/*header styles */
+body > header {
+    background-color: black;
+    height: 50px;
+    line-height: 50px;
+}
+body > header .header a {
+    color: red;
+}
+nav > ul.menu > li {
+    display: inline-block;
+    margin-left: 10px;
+}
+nav > ul > li ul {
+    display: none;
+    background-color: black;
+}
+nav > ul > li a:hover {
+    border-bottom: 2px solid #24ba9f;
+    padding-bottom: 10px;
+}
+body > header .header .submenu a {
+    color: white;
+}
+nav > ul > li.aboutUs:hover > ul {
+    display: block;
+}
