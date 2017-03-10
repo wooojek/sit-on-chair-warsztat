@@ -44,21 +44,29 @@ body > header {
 body > header .header a {
     color: red;
 }
+nav > ul {
+    position: relative;
+}
 nav > ul.menu > li {
     display: inline-block;
-    margin-left: 10px;
+    padding-right: 10px;
 }
-nav > ul > li ul {
-    display: none;
-    background-color: black;
+.submenu {
+    background: transparent;
+    display: block;
+    position: absolute;
+    padding: 0;
+    padding-top: 13px;
+    left: -35px;
+    line-height: initial;
+    width: 130px;
 }
+
 nav > ul > li a:hover {
     border-bottom: 2px solid #24ba9f;
     padding-bottom: 10px;
 }
-body > header .header .submenu a {
-    color: white;
-}
-nav > ul > li.aboutUs:hover > ul {
+.submenu:hover {
     display: block;
+    color: red;
 }
