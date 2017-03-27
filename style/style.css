@@ -66,7 +66,7 @@ nav > ul {
     padding-left: 25px;
 }
 .aboutUs {
-    /*padding-bottom: 15px;*/
+    padding-bottom: 15px;
 }
 .submenu {
     display: none;
@@ -84,7 +84,10 @@ nav > ul {
     padding: 2px 0;
     text-transform: capitalize;
 }
-.aboutUs:hover .submenu {
+/*.aboutUs:hover .submenu {
+    display: block;
+}*/
+.display {
     display: block;
 }
 .submenu::after {
@@ -95,9 +98,9 @@ nav > ul {
     border-right: 10px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
-    top: -20px;
-    right: 35px;
-    margin: 10px 10px;
+    top: -10px;
+    right: 45px;
+    /*margin: 10px 45px;*/
 }
 
 /*slider*/
@@ -222,6 +225,9 @@ nav > ul {
     font-size: 14px;
     padding-top: 55px;
     margin-left: 15px;
+}
+.productToggleDisplay {
+    display: none;
 }
 
 /* offer */
