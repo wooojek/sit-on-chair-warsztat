@@ -233,17 +233,164 @@ nav > ul {
 /* offer */
 
 #offer {
-    height: 600px;
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(230, 230, 230);
+}
+.offer {
+    height: 650px;
+    position: relative;
+}
+.offer > h2 {
+    position: absolute;
+    padding-top: 20px;
+    font-size: 20px;
+    float: left;
+    width: 30%;
+    margin-left: 15px;
+    border-bottom: 5px solid #24ba9f;
+    display: block;
+    font-weight: 400;
+}
+.offer__plans,
+.offer__plansOdd {
+    position: relative;
+    height: 450px;
+    width: 30%;
+    padding-top: 30px;
+    margin: 0 16px;
+    margin-top: 100px;
+    float: left;
 }
 .offer__plans {
-    height: 400px;
-    width: 30%;
-    float: left;
-    border: 1px solid rgb(194, 194, 194);
-    background-color: rgb(244, 244, 244);
-    margin: 32px 16px;
+    border: 2px solid rgb(190, 190, 190);
+    background-color: rgb(243, 243, 243);
 }
+.offer__plansOdd {
+    border: 2px solid #24ba9f;
+    background-color: #24ba9f;
+}
+.outerCircle {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: -30px;
+    left: 125px;
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+.innerCircle {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 11px;
+    left: 11px;
+    background-color: rgb(190, 190, 190);
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 50%;
+    z-index: 3;
+}
+.offer h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #24ba9f;
+}
+.offer .join,
+.offer__plansOdd .join {
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+.offer .join {
+    background-color: #24ba9f;
+    border: 1px solid #24ba9f;
+}
+.offer .join a {
+    color: white;
+    display: block;
+}
+.offer__plansOdd .outerCircle {
+    background-color: #24ba9f;
+    border: 2px solid #24ba9f;
+}
+.offer__plansOdd .innerCircle {
+    background-color: rgb(243, 243, 243);
+    border: 2px solid rgb(243, 243, 243);
+}
+.offer__plansOdd .join {
+    background-color: white;
+    border: 1px solid white;
+}
+.offer__plansOdd .join a {
+    color: #24ba9f;
+}
+.offer__plansOdd h3 {
+    color: white;
+}
+.price,
+.offer__plansOdd .price {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 20px auto;
+    background-color: white;
+}
+.price {
+    border: 2px solid rgb(190, 190, 190);
+}
+.offer__plansOdd .price {
+    border: 2px solid #24ba9f;
+}
+.price > p,
+.offer__plansOdd .price > p {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(190, 190, 190);
+    line-height: 25px;
+    padding-top: 20px;
+}
+.price > p {
+    color: rgb(190, 190, 190);
+}
+.offer__plansOdd .price > p {
+    color: #24ba9f;
+}
+sup {
+    font-size: 15px;
+}
+.currency {
+    font-size: 15px;
+}
+.whatsIncluded div {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.whatsIncluded div:nth-of-type(n) {
+    color: rgb(120, 120, 120);
+    font-size: 20px;
+}
+.whatsIncluded div:nth-of-type(2n+1) {
+    background-color: rgb(200, 200, 200);
+}
+.offer__plansOdd .whatsIncluded div:nth-of-type(2n+1){
+    background-color: white;
+}
+.whatsIncluded div:nth-of-type(2n) {
+    background-color: rgb(230, 230, 230);
+}
+
 
 
 
