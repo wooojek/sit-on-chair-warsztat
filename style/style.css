@@ -114,16 +114,17 @@ nav > ul {
 }
 .slider {
     height: 400px;
+    position: relative;
 }
-.slider ul{
+.slider ul {
     list-style: none;
 }
 
-.slider li{
+.slider li {
     display: none;
 }
 
-.slider .visible{
+.slider .visible {
     display: inline-block;
 }
 
@@ -165,18 +166,11 @@ nav > ul {
     color: white;
     display: block;
 }
-
-.slider__arrows {
-    position: relative;
-    line-height: 400px;
-    width: 100%;
-    top: 175px;
-    z-index: 1;
-}
 .leftArrow {
     border-left: 3px solid;
     transform: rotate(45deg);
     position: absolute;
+    top: 170px;
     left: 6px;
 }
 
@@ -184,6 +178,7 @@ nav > ul {
     border-right: 3px solid;
     transform: rotate(-45deg);
     position: absolute;
+    top: 170px;
     right: 6px;
 }
 
@@ -191,6 +186,7 @@ nav > ul {
     border-bottom: 3px solid;
     border-color: #24ba9f;
     width: 30px; height: 30px;
+    z-index: 1;
 }
 
 /*products*/
