@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             index = (index + 1) % list.length;
         } else if (flag === 0){
             index = ( list.length * (index + 1) + (index - 1) ) % list.length; //uniwersalna instrukcja pozwalajaca na poruszanie sie w dol listy, gdy jest na pierwszym elemencie to po przejsciu na kolejny "nizszy" element wraca na koniec listy
+            //mozna to zrobic na if'ach - mniej obliczen ale to rozwiazanie tak w ramach ciekawostki
         }
 
         list[index].classList.add("visible");
