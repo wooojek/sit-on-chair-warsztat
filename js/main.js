@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var prev = slider.querySelector(".leftArrow");
     var list = slider.querySelectorAll("li");
     var index = 0;
+    
     //obsluga slidera
+    //slider handler
     list[index].classList.add("visible");
 
     var sliding = function (flag) {
@@ -17,8 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (flag === 1) {
             index = (index + 1) % list.length;
         } else if (flag === 0){
-            index = ( list.length * (index + 1) + (index - 1) ) % list.length; //uniwersalna instrukcja pozwalajaca na poruszanie sie w dol listy, gdy jest na pierwszym elemencie to po przejsciu na kolejny "nizszy" element wraca na koniec listy
+            index = ( list.length * (index + 1) + (index - 1) ) % list.length; //in polish -> uniwersalna instrukcja pozwalajaca na poruszanie sie w dol listy, gdy jest na pierwszym elemencie to po przejsciu na kolejny "nizszy" element wraca na koniec listy
             //mozna to zrobic na if'ach - mniej obliczen ale to rozwiazanie tak w ramach ciekawostki
+
+            //in english -> Universal function for going through the table from hightest index to lowest( index = 0) and then back to highest, when the function reaches 0 and wants to go down (index-1) it goes back highest index
+            //I made it this way for fun, there are easiest ways to do that but the way I did it I thought was interesting
         }
 
         list[index].classList.add("visible");
@@ -32,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //koniec obslugi slidera
+    //end of slider handler
 
     dropDownNav.addEventListener("mouseenter", function  () {
         submenu.classList.toggle("display");
